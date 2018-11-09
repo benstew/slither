@@ -268,7 +268,7 @@ def parse_args(detector_classes, printer_classes):
                                 default='all')
 
     group_printer.add_argument('--print',
-                               help='Comma-separated list fo contract information printers, '
+                               help='Comma-separated list of contract information printers, '
                                     'available printers: {}'.format(
                                         ', '.join(d.ARGUMENT for d in printer_classes)),
                                action='store',
@@ -288,7 +288,7 @@ def parse_args(detector_classes, printer_classes):
                                default=False)
 
 
-    group_detector.add_argument('--exclude-detectors',
+    group_detector.add_argument('--exclude',
                                 help='Comma-separated list of detectors that should be excluded',
                                 action='store',
                                 dest='detectors_to_exclude',
